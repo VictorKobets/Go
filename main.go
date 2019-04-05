@@ -54,8 +54,8 @@ func getDirFiles(out io.Writer, prefix, pwd string, printFiles bool) {
 	}
 }
 
-func dirTree(output io.Writer, currDir string, printFiles bool) error {
-	getDirFiles(output, "", currDir, printFiles)
+func dirTree(out io.Writer, path string, printFiles bool) error {
+	getDirFiles(out, "", path, printFiles)
 	return nil
 }
 
